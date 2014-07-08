@@ -1,0 +1,45 @@
+.icondpa-etsam {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x79;');
+}
+.icondpa-dpa {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x70;');
+}
+.icondpa-adm {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x61;');
+}
+.icondpa-instituto {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x73;');
+}
+.icondpa-noticias {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x6e;');
+}
+.icondpa-innovacion {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x65;');
+}
+.icondpa-investigacion {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x69;');
+}
+.icondpa-doctorado {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x64;');
+}
+.icondpa-master {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x6d;');
+}
+.icondpa-pfc {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x66;');
+}
+.icondpa-grado {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x67;');
+}
+.icondpa-circle {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x6f;');
+}
+.icondpa-titulos-propios {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x74;');
+}
+.icondpa-upm {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x75;');
+}
+.icondpa-aro {
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x72;');
+}

@@ -1,0 +1,1269 @@
+/*
+Theme Name: Toolbox
+Theme URI: http://dpa-etsam.com
+Author: Luis Pachón - Jorge Troya / Plataformas Digitales DPA
+Author URI: http://dpa-etsam.com
+Description: Theme para el MPAA6. Minimalista, diseño adaptativo.
+Version: 1.0
+License: GNU General Public License
+License URI: license.txt
+Tags: custom-menu, sticky-post, microformats, rtl-language-support, translation-ready, full-width-template, post-formats
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* =Structure
+-------------------------------------------------------------- */
+
+html {
+	overflow: -moz-scrollbars-vertical; 
+	overflow-y: scroll;
+}
+body {
+	font-family: arial, Helvetica, sans-serif; 	
+   	font-weight: 300;   	
+}
+
+#principal {margin:0 auto;max-width:1280px;}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Georgia, serif;
+}
+
+a { 
+	color: #E5007E; 
+	text-decoration: none;
+}
+
+a:hover,
+a:focus { 
+	color:#E5007E;
+	/* background-color: #BCBEC0; */
+	text-decoration: underline;
+}
+
+/* Text meant only for screen readers */
+.screen-reader-text,
+.assistive-text {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* Alignment */
+.alignleft {
+	display: inline;
+	float: left;
+}
+.alignright {
+	display: inline;
+	float: right;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/* =Header
+-------------------------------------------------------------- */
+
+#header {
+	border-bottom:1px dotted #231F20;
+	padding-bottom:25px;
+	margin-bottom:20px;
+	display:block;
+	height:auto;
+	overflow:hidden;
+}
+#site-title {
+	font-size: 2em;
+	font-weight: bold;
+	margin: .67em 0;
+}
+#site-description {
+	font-size: 1em;
+	font-weight: normal;
+	margin: 0 0 1em;
+}
+
+#logos {
+	margin:15px 0 0 0;
+}
+#logos #logopa {
+	width:60px;
+	height:60px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	display:block;
+	position: relative;
+	float:left;
+	margin:0 7px 0 0;
+	font-size:60px;
+	color:#000;
+}
+#logos #logopa a { color:#000; }
+#logos #logopa #logo-dpa {
+	display:none;
+}
+#logos #logopa:hover { color:#fff; }
+#logos #logopa:hover #logo-dpa {
+display: block;
+}
+#logos #logo-dpa {
+	position:absolute; top:0; left:0;
+}
+#logos #blogname {
+	font-color:#000;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	background-image:url('../img/dempty.png');
+	display:block;
+	position: relative;
+	float:left;
+	height:60px;
+	top:5px;
+}
+#logos #blogname h1 {
+	font-size:1em;
+	font-weight: normal;
+	margin:0;
+	line-height: 1.2;
+	text-align: left;
+	text-decoration: none;
+	font-family: Helvetica, sans-serif;
+	margin:5px 1px;
+}
+#logos #blogname a, #logos #blogname a:link, #logos #blogname a:visited, {
+	text-decoration: none;
+}
+
+#info-dpa {
+	display:inline;
+	float:right;
+	font-size:0.65em;
+	color:#9C9B9B;
+	margin:0;
+	width:auto;
+}
+
+#info-dpa a { color:#9C9B9B;text-decoration:none; }
+#info-dpa a:hover, #info-dpa .nigger, #info-dpa p.iconos a {color:#000;}
+#info-dpa p {line-height:1;margin:0;text-align:right;}
+#info-dpa .iconos {color:#000;font-size:3em;}
+
+
+/* Estilo para los breadcrumbs de las unidades docentes, pfc, grado */
+
+#breadcrumbs-ud,
+#breadcrumbs-pfc,
+#breadcrumbs-gdi,
+#breadcrumbs-master {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	float: left;
+	margin:0 7px 0 0;
+	font-size:60px;	
+	font-family: Georgia, serif; 
+	font-style:italic; 	
+	line-height: 1;
+}
+
+#breadcrumbs-ud .grado {
+	color: #FAAF40;
+}
+
+#breadcrumbs-ud .ud {
+	color: #000;
+	display: inline-block;
+	position: relative;
+	margin-left: -10px;
+}
+
+#breadcrumbs-ud .ud p{
+	position: absolute;
+	font-size: 0.5em;
+	/* top: 12px; */
+	left: 13px;
+	text-align: center;
+	line-height: 55px;
+}
+
+#breadcrumbs-ud .ud p.ud-grande,
+#breadcrumbs-ud .ud p.ud-pfch {
+	position: absolute;
+	font-size: 0.35em;
+	top: 10px;
+	left: 3px;
+	text-align: center;
+	width: 90%;
+	line-height: 18px;
+}
+
+#breadcrumbs-ud .ud p.ud-pfch {
+	top: 0;
+	line-height: 55px;
+}
+
+
+#site-title-ud {
+	font-size: 1.6em !important;	
+	font-family: Georgia, serif !important; 
+	font-style: italic !important;
+}
+
+#breadcrumbs-pfc {
+	color: #FFFF00;	
+}
+
+#breadcrumbs-gdi {
+	color: #80B8E4;	
+}
+
+#breadcrumbs-master a {
+	color: #E5007E;
+}
+
+#breadcrumbs-master a:hover {
+	text-decoration: none;
+}
+
+
+
+
+
+/* =Menu
+-------------------------------------------------------------- */
+
+#access {
+	background: #eee;
+	display: block;
+	float: left;
+	margin: 0 auto 1em;
+	width: 100%;
+}
+#access ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+#access li {
+	float: left;
+	position: relative;
+}
+#access a {
+	display: block;
+	line-height: 2em;
+	padding: 0 1em;
+	text-decoration: none;
+}
+#access ul ul {
+	box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+	display: none;
+	float: left;
+	position: absolute;
+	top: 2em;
+	left: 0;
+	z-index: 99999;
+}
+#access ul ul ul {
+	left: 100%;
+	top: 0;
+}
+#access ul ul a {
+	background: #dedede;
+	line-height: 1em;
+	padding: .5em .5em .5em 1em;
+	width: 10em;
+	height: auto;
+}
+#access li:hover > a,
+#access ul ul :hover > a {
+	background: #dedede;
+}
+#access ul ul a:hover {
+	background: #cecece;
+}
+#access ul li:hover > ul {
+	display: block;
+}
+
+.contmenu {
+	width:100%; display:block;position: relative; margin:0 0 20px 0;min-height:60px;
+}
+.contmenu .icono {
+	width:60px; height:60px; font-size:60px; color:#BCBEC0; position:absolute;top:0;left:0; display:block;
+}
+.contmenu .elements {
+	margin:-5px 0 0 70px; font-size:0.75em; color:#000;
+}
+.contmenu .elements p { margin:0 0 2px 0;padding:0;font-family: Georgia, serif; font-style:italic; font-weight: bold;line-height: 1;}
+.contmenu .elements ul {list-style-type:none;margin:0;padding:0;}
+.contmenu .elements ul li {line-height:1;margin:0 0 1px 0;}
+.contmenu .elements ul li a {text-decoration: none !important; color:#9C9B9B !important;}
+.contmenu .elements ul li a:hover {color:#000 !important; text-decoration: none !important;}
+
+.master:hover .icono, .category-masteres-oficiales-relacionado-con a:hover {color:#E5007E !important;}
+.noticias:hover .icono , .administracion:hover .icono {color:#E5007E;}
+.innovacion:hover .icono {color:#E5007E;}
+
+/* temporal hasta renderizar la tipografia */
+.contmenu .icono-tmp {
+	width:60px; height:60px; font-size:60px; color:#fff; position:absolute;top:0;left:0; display:block;
+	background-color: #BCBEC0;
+	border-radius: 50px;
+}
+
+.contmenu .icono-tmp p {
+	position:absolute;width:100%;
+	text-align: center;
+	font-size:0.75em;
+	font-family: Georgia, serif;
+	margin: auto 0;
+	padding:0;
+	line-height:50px;
+}
+
+
+/* para el mpaa */
+.informacion:hover .icono,
+.funcionamiento:hover .icono,
+.asignaturas:hover .icono,
+.profesorado:hover .icono,
+.oficinas:hover .icono,
+.tesis:hover .icono,
+.noticas:hover .icono {color:#E5007E !important;}
+
+
+/* =Content
+-------------------------------------------------------------- */
+
+.sticky {
+}
+.entry-meta {
+	clear: both;
+	display: block;
+}
+.single-author .entry-meta .byline {
+	display: none;
+}
+
+#content nav {
+	display: block;
+	overflow: hidden;
+}
+#content nav .nav-previous {
+	float: left;
+	width: 50%;
+}
+#content nav .nav-next {
+	float: right;
+	text-align: right;
+	width: 50%;
+}
+#content #nav-above {
+	display: none;
+}
+
+#content a {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#content a:hover{	
+	text-decoration: underline;
+}
+
+
+.paged #content #nav-above,
+.single #content #nav-above {
+	display: block;
+}
+#nav-below {
+	margin: 1em 0 0;
+}
+.page-link {
+	clear: both;
+	margin: 0 0 1em;
+}
+.page .edit-link {
+	clear: both;
+	display: block;
+}
+
+/* 404 page */
+.error404 .widget {
+	float: left;
+	width: 33%;
+}
+.error404 .widget .widgettitle,
+.error404 .widget ul {
+	margin-right: 1em;
+}
+.error404 .widget_tag_cloud {
+	clear: both;
+	float: none;
+	width: 100%;
+}
+
+/* Notices */
+.post .notice,
+.error404 #searchform {
+	background: #eee;
+	display: block;
+	padding: 1em;
+}
+
+/* Image Attachments */
+.image-attachment div.entry-meta {
+	float: left;
+}
+.image-attachment nav {
+	float: right;
+	margin: 0 0 1em 0;
+}
+.image-attachment .entry-content {
+	clear: both;
+}
+.image-attachment .entry-content .entry-attachment {
+	background: #eee;
+	margin: 0 0 1em;
+	padding: 1em;
+	text-align: center;
+}
+.image-attachment .entry-content .attachment {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/* Aside Posts */
+.format-aside .entry-header {
+	display: none;
+}
+.single .format-aside .entry-header {
+	display: block;
+}
+.format-aside .entry-content,
+.format-aside .entry-summary {
+	padding-top: 1em;
+}
+.single .format-aside .entry-content,
+.single .format-aside .entry-summary {
+	padding-top: 0;
+}
+
+/* Gallery Posts */
+.format-gallery .gallery-thumb {
+	float: left;
+	margin: 0 1em 0 0;
+}
+
+/* Image Posts */
+.format-image .entry-header {
+	display: none;
+}
+.single .format-image .entry-header {
+	display: block;
+}
+.format-image .entry-content,
+.format-image .entry-summary {
+	padding-top: 1em;
+}
+.single .format-image .entry-content,
+.single .format-image .entry-summary {
+	padding-top: 0;
+}
+
+.post {
+	border-bottom:1px dotted #000; 
+	margin-bottom: 30px;
+}
+.post .entry-header,
+.page .entry-header {
+	border-bottom:1px solid #000;
+	padding:0 0 6px 0;
+	margin:0 0 10px 0;
+}
+.post .entry-title,
+.page .entry-title {
+	font-family: Georgia, serif;
+	font-size:14px;font-style:italic;
+	margin:0;
+	line-height:1.3;
+}
+.post .entry-title a .icondpa-circle, .widget-title .icondpa-circle {font-size:12px;} /* {font-size:0.85em;} */
+.post .entry-title a {color:#000; text-decoration: none;}
+.post .entry-title a:hover {color:#E5007E; text-decoration: underline;}
+.post .entry-summary, .post .entry-content, .post .entry-summary p, .post .entry-content p {color:#7F7F7F;line-height:1.4;font-size:1em;}
+.post .entry-meta {font-size:0.82em;}
+.post .entry-meta a {color:#939598;}
+.post .entry-meta a:hover {color:#E5007E;text-decoration: none;}
+.post .entry-meta .date {color:#939598;}
+.post .entry-meta .leer-mas {font-family: Georgia,serif;font-weight: bold;font-style: italic;font-size:1.1em;margin:0 5px;}
+
+.single .post .entry-header {border:none;padding:0;}
+.single .post .entry-title {text-transform: none;font-size:14px;width:100%;border-bottom:1px solid #000;padding:0 0 3px 0;margin:0 0 7px 0;}
+.single .post .entry-header .entry-meta .date {font-family: Georgia, serif;font-style: italic;color:#58595B;}
+.single .post .entry-content {margin-bottom:30px;}
+.single .post .entry-content, .single .post .entry-content p {color:#9A9A9A;font-size:1em;line-height: 1.4;}
+
+.single .post-navigator {margin:3px 0 0 0;font-size:0.8em;}
+
+
+.page .entry-header {border:none;padding:0;}
+.page .entry-title {text-transform: none;font-size:14px;width:100%;border-bottom:1px solid #000;padding:0 0 3px 0;margin:0 0 7px 0;}
+.page .entry-header .entry-meta .date {font-family: Georgia, serif;font-style: italic;color:#58595B;}
+.page .entry-content {margin-bottom:30px;}
+.page .entry-content, .single .post .entry-content p {font-size:1em;line-height: 1.4;}
+.page .entry-header .entry-title i.icondpa-circle {font-size:14px;}
+
+
+.unidad_docente,
+.profesores {
+	border-bottom:1px dotted #000 !important; 
+	margin-bottom: 30px !important;
+}
+.unidad_docente .entry-header,
+.profesores .entry-header {
+	/*border-bottom:1px solid #000 !important; */
+	padding:0 0 6px 0 !important;
+	margin:0 0 10px 0 !important;
+}
+
+.unidad_docente .entry-title {
+	font-family: Georgia, serif !important;
+	font-size:14px !important;
+	font-style:italic !important;
+	margin:0 !important;
+	line-height:1.3 !important;
+	border-bottom:1px solid #000 !important;
+	padding:0 0 3px 0 !important;
+	margin:0 0 7px 0 !important;
+}
+
+/* =Images
+-------------------------------------------------------------- */
+
+a img {
+	border: none;
+}
+p img {
+	margin-bottom: 0.5em; /* a small bottom margin prevents content floating under images */
+}
+/*
+Resize images to fit the main content area.
+- Applies only to images uploaded via WordPress by targeting size-* classes.
+- Other images will be left alone. Use "size-auto" class to apply to other images.
+*/
+img.size-auto,
+img.size-full,
+img.size-large,
+img.size-medium,
+.attachment img,
+.widget-area img,
+.wp-caption {
+	max-width: 100%; /* When images are too wide for containing element, force them to fit. */
+	height: auto; /* Override height to match resized width for correct aspect ratio. */
+}
+img.alignleft {
+	margin-right: 1em;
+}
+img.alignright {
+	margin-left: 1em;
+}
+.wp-caption {
+	padding: .5em;
+	text-align: center;
+}
+.wp-caption img {
+	margin: .25em;
+}
+.wp-caption .wp-caption-text {
+	margin: .5em;
+}
+.gallery-caption {
+}
+.wp-smiley {
+	margin: 0;
+}
+/* para ajustar las imagenes destacadas anteriores al nuevo tema */
+img.fix-image {
+	width: 500px !important;
+	height: auto !important;
+}
+
+
+/* =Forms
+-------------------------------------------------------------- */
+
+#searchform label {
+	display: none;
+}
+#searchform input#s {
+	width: 60%;
+}
+input[type=text],
+input#s {
+	margin: 0 1em 0 0;
+	width: 60%;
+}
+textarea {
+	width: 80%;
+}
+
+/* Class for labelling required form items */
+.required {
+	color: #cc0033;
+}
+
+
+/* =Comments
+-------------------------------------------------------------- */
+
+article.comment {
+	display: block;
+}
+#respond input[type=text] {
+	display: block;
+	width: 60%;
+}
+#respond textarea {
+	display: block;
+	margin: 0 0 1em;
+	width: 80%;
+}
+#respond .form-allowed-tags {
+	clear: both;
+	width: 80%;
+}
+#respond .form-allowed-tags code {
+	display: block;
+}
+
+
+/* =Widgets
+-------------------------------------------------------------- */
+
+.widget {
+	display: block;
+}
+.widget-area .widget_search {
+	overflow: hidden;
+}
+.widget-area .widget_search input {
+	float: left;
+}
+
+.widget-title{
+	font-size: 14px;
+	font-family: 'Georgia', sans-serif;
+	font-weight: bold;
+	font-style: italic;
+	color: #000;
+	border-bottom: 1px solid #000;
+	margin: 0px 0px 15px 0;
+	padding: 0 0 4px 0;
+	line-height: 20px;
+
+}
+
+
+/* =Footer
+-------------------------------------------------------------- */
+
+#colophon {
+	padding: 1em 0 0;
+}
+
+.footer-text {
+	font-size: 10px;
+	color: #9C9B9B;
+}
+
+/* Unidades Docentes
+-------------------------------------------------------------- */
+.proyectos-box{
+	margin-bottom: 10px;
+}
+
+.proyectos-title-box {
+	font-size: 14px;
+	font-family: 'Georgia', Helvetica;
+	font-weight: bold;
+	font-style: italic;
+	color: #1D1D1B;
+	border-bottom: 1px solid #1D1D1B;
+	height: 20px;
+	padding: 5px 0;
+	margin: 0 0 10px;
+}
+
+.proyectos-title-box i.punto {
+	font-size: 24px;
+	padding: 0 5px 0 0;
+}
+
+
+
+.box-unidad {
+	display: inline-block;
+	width: 225px;
+	min-height: 100px;
+	max-height: 140px;
+	/* float: left; */
+	margin: 5px 5px 10px 0;
+}
+
+.box-numero-ud {
+	background-color: #BCBEC0;	
+	border-radius: 50px;
+	height: 60px;
+	width: 60px;
+	float: left;
+	/*margin-right: 10px;	*/
+}
+
+.fondo-numero-ud,
+.fondo-numero-gm {
+	background-color: #fff;	
+	border-radius: 50px;
+	width: 90%;
+	height:90%;
+	margin: 3px;
+	text-align: center;
+}
+
+.fondo-numero-ud span {
+	position: relative;
+	top: 14px;
+	/* left: 13px; */
+	font-family: 'Georgia', Helvetica;
+	font-size: 24px;
+	color: #BCBEC0;
+}
+
+
+.fondo-numero-ud a {
+	text-decoration: none !important;
+	font-weight: normal !important;
+}
+
+.fondo-numero-ud a:hover {
+	text-decoration: none !important;
+	background-color: #BCBEC0 !important;	
+}
+
+
+.box-unidad-miembros {
+	/**
+	width: 175px;
+	height: 100px;
+	max-height: 150px;
+	float: left;	
+	**/
+	margin-left: 70px;
+}
+
+
+.box-unidad-miembros a {
+	text-decoration: none !important;
+}
+
+.box-unidad-miembros a:hover span {
+	text-decoration: underline !important;
+	background-color: #fff !important;
+}
+
+
+.title-ud {
+	font-size: 14px;
+	font-family: 'Georgia', Helvetica;
+	color: #1D1D1B;
+	font-weight: bold;
+}
+
+.lista-miembros {
+	list-style: none;
+	list-style-position: inside;
+	display: block;
+	float: left;	
+	margin: 0;
+	font-family: Helvetica,'Georgia';
+	font-size: 11px;
+}
+
+.lista-miembros li {
+	/*float: left;*/
+	line-height: 14px;
+}
+
+
+/* Para libre configuracion y optativas */
+
+.fondo-numero-ud a,
+.fondo-numero-gm a {	
+	position: relative ;
+	top: 14px;
+	font-family: 'Georgia', Helvetica;
+	font-size: 24px;
+	color: #BCBEC0;
+	cursor: pointer;
+}
+
+.fondo-numero-ud:hover,
+.fondo-numero-gm:hover {
+	background-color: #BCBEC0 !important; 
+}
+
+
+.fondo-numero-gm a {
+	top:3px;
+	text-decoration: none !important;
+	font-weight: normal !important;
+}
+
+.fondo-numero-ud:hover,
+.fondo-numero-ud:hover span,
+.fondo-numero-ud:hover a,
+.fondo-numero-ud a:hover,
+.fondo-numero-gm:hover,
+.fondo-numero-gm:hover a {
+	text-decoration: none !important;
+	color: #fff !important;
+}
+
+.fondo-numero-gm a:hover {
+	text-decoration: none !important;
+	color: #fff !important;
+	background-color: transparent !important;
+}
+
+.box-libre-conf {
+	display: table;
+	min-height: 60px;
+	width: auto;
+	float: left;
+}
+
+
+.box-numero-libre-conf {
+	float: left;
+	margin-right: 10px;
+}
+
+.box-numero-libre-conf,
+.box-miembros-libre-conf {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.widget-title-column {
+	font-size: 12px;
+	font-family: 'Georgia', sans-serif;
+	font-weight: bold;
+	font-style: italic;
+	border-bottom: 1px solid #000;	
+}
+
+.menu-dpa {
+	width: 20.3125%;
+	float: left;
+}
+
+#pagination {
+	width: 100%;
+	margin: 30px 0;
+	float: left;
+	position: relative;
+}
+
+#pagination p {
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.page-numbers {
+	background-color: #fff;	
+	border-radius: 50px;
+	padding: 1px 7px;
+}
+
+.page-numbers:hover,
+#pagination p .current {
+	background-color: #BCBEC0;
+	color: #fff;
+	border-radius: 50px;
+	padding: 1px 7px;
+}
+
+#pagination p .prev:hover,
+#pagination p .next:hover{
+	background-color: #fff;
+	color: #333;
+	border-radius: 0;	
+}
+
+/* #agenda .agendaelem {overflow:hidden;display:block;margin:8px 0;} */
+#agenda .agendaelem {
+	overflow:hidden;
+	display:block;
+	padding:8px 0;	
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+
+#agenda .evento { width:22%;margin:0 3% 0 0;border-radius:100px;-moz-border-radius: 100px;background:#BCBEC0;display: inline-block; position: relative;float:left; }
+#agenda .evento .ratio { padding-top:100%; }
+#agenda .evento .datos { width:80%;top:0;margin:20% 10% 0 10%;position: absolute;}
+#agenda .evento .datos p {width:100%;text-align: center; font-family: Helvetica, sans-serif; color: #fff;}
+#agenda .evento .datos .dia {font-size:110%;font-weight:400;margin:0;line-height:0.8;}
+#agenda .evento .datos .hora {font-size:80%;font-weight:400;margin:-4px auto;}
+#agenda .info {width:75%;position:relative;float:left;}
+#agenda .info h5, #agenda .info p {width:100%;line-height: 1;margin:0;padding:0;}
+#agenda .info h5 {font-style:normal;font-color:#000;text-transform: uppercase;line-height:1;font-size:1.1em;margin:0;font-weight:300;}
+#agenda .info h5 a {color:#000;}
+#agenda .info h5 a:hover {color:#E5007E;} 
+#agenda .info p {color:#999;font-size:0.8em;margin:0;font-weight: 300;margin:3px 0 0 0;}
+#agenda .cuando {margin:10px 0 0 0;width:100%;text-transform:lowercase;font-size:0.8em;color:#000;font-weight: 300;}
+
+#agenda .agendaelem:hover,
+#agenda .agendaelem:hover evento {	
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+
+
+/* Ficha Digital */
+.ficha-digital {
+	background-color: #FFFF00;
+	padding: 20px 0 10px 0;
+	margin:10px 0;
+	width: 50%;
+}
+
+.ficha-digital p {
+	color: #000;
+	text-align: center;
+}
+
+.ficha-digital a {	
+	color: #000;
+}
+
+.ud-nivel-proyecto {
+	color:#888;
+	font-size:16px;
+	font-weight:bold;	
+}
+
+.aviso-tmp p {
+	text-align: center;
+	padding:20px 0 0;
+}
+
+/* Contacto */
+.contacto-title {
+	font-size: 14px;
+	font-family: 'Georgia',Helvetica;
+	font-weight: bold;
+	font-style: italic;
+	color: #1D1D1B;
+	border-bottom: 1px solid #1D1D1B;
+	height: 20px;
+	width: 25%;
+	padding: 5px 0px;
+	margin: 0px 0px 10px;
+}
+
+.info-contacto,
+.info-contacto-depto {
+	list-style-type: none;	
+	display: table;
+}
+
+/*
+.info-contacto>:first-child {
+	color: #E6E6E6;
+} */
+
+.info-contacto-depto > li {
+	margin: 0 5px;
+}
+
+.info-contacto-depto > li > ul  {
+	list-style-type: none;
+	padding: 15px 0 0 0;
+
+}
+
+
+.info-contacto > li {
+	display: inline-block;
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
+.info-contacto > li span[class^="iconos-"] {
+	float: left;
+	font-size: 20px;
+}
+
+.info-contacto > li i {
+	width: 31px;
+	height: 15px;
+	vertical-align: text-bottom;
+	background-image: url('images/iconos-dpa-small.png');
+	background-repeat: no-repeat;
+    background-size: auto;            
+    display: inline-block; 
+}
+
+.info-contacto > li > i.img-pfc {
+	background-position: 0px -16px;
+	margin-right:5px;
+}
+
+.info-contacto > li > i.img-master {
+	background-position: -62px -16px;
+	margin-right:5px;
+}
+
+
+.info-contacto > li > i.img-doctorado {
+	background-position: 0px -33px;
+	margin-right:5px;
+}
+
+.info-contacto > li > i.img-imagen {
+	background-position: -31px -33px;
+	margin-right:5px;
+}
+
+
+.info-contacto > li > i.img-informatica {
+	background-position: -62px -33px;
+	margin-right:5px;
+}
+
+.info-contacto > li > i.img-soporte {
+	background-position: -62px -33px;
+	margin-right:5px;
+}
+
+
+.info-contacto > li > ul  {
+	list-style-type: none;
+	padding: 15px 0 0 0;
+	margin: 10px 0 5px 0;
+	border-top: 1px dotted #231F20;
+}
+
+
+.info-contacto ul > li {	
+	/* display: block; */
+	padding: 0 0 5px 0;
+}
+
+
+/***
+Estilos para la lista de unidades docentes
+***/
+.box-lista-ud {
+	padding-bottom: 25px;
+}
+
+
+.box-lista-ud .nombre-ud:hover p,
+.box-lista-ud .nombre-ud .ud:hover  {
+	color: #333 !important ;
+}
+
+
+.box-lista-ud a {
+	position: relative;
+	top: 5px;
+	left: 5px;
+	color: #9C9B9B;
+	font-family: Georgia, serif; 
+	font-size: 14px;
+	font-style: italic;
+}
+
+.box-lista-ud a:hover,
+.box-lista-ud a:focus {
+	color: #333 !important;
+}
+
+.nombre-ud {
+	/* background-repeat: no-repeat; */
+	/* background-position: center center; */
+	/* background-size: cover; */
+	float: left;
+	/* margin:-5px 7px 0 0; */
+	font-size:30px;	
+	font-family: Georgia, serif; 
+	font-style:italic; 	
+	line-height: 1;
+}
+
+.nombre-ud .grado {
+	color: #FAAF40;
+}
+
+.nombre-ud .ud {
+	color: #9C9B9B;
+	display: inline-block;
+	position: relative;	
+}
+
+.nombre-ud .ud p{
+	position: absolute;
+	font-size: 0.5em;
+	top: 7px;
+	left: 7px;
+	text-align: center;
+}
+
+.nombre-ud .ud p.ud-grande,
+.nombre-ud .ud p.ud-grande-pfc {
+	position: absolute;
+	font-size: 0.35em;
+	top: 5px;
+	left: 2px;
+	text-align: center;
+	width: 90%;
+}
+
+.nombre-ud .ud p.ud-grande-pfc {
+	top: 9px;
+}
+
+/***
+* Estilos para grupos de investigacion
+***/
+
+.header-gdi {
+	font-size: 0.9em;
+	line-height: 1.1;	
+}
+
+.logo-gdi {
+	position: relative;
+	width: 60px;
+	height: 60px;
+}
+
+.logo-gdi img {
+	border-radius: 50px;
+	width: 100%;
+	height: 100%;	
+}
+
+.title-gdi {
+	font-size: 25px !important;
+}
+
+a.link-gdi {
+	font-style: 0.9em;
+	color: #9C9B9B;
+	text-decoration: none !important;
+}
+
+a.link-gdi:hover {
+	color: #046caf !important;
+	background-color: #fff !important;
+	text-decoration: underline !important;
+}
+
+.avatar-director-gdi {
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+.avatar-director-gdi img {
+	border-radius: 50px;
+		
+}
+
+.inv-responsable h4 {
+	margin:15px 0 5px 0;
+	padding:0;
+	font-style: italic;
+	font-weight: 400;
+}
+
+.inv-responsable h3 {
+	font-size: 1.6em;
+	margin: 0 0 4px 0;
+	line-height: 15px;
+}
+
+.inv-responsable p {
+	font-size: 1.2em;
+	color: #9C9B9B;
+}
+
+.box-miembro-gdi {
+	display: inline-table;
+	width: 30%;
+	max-height: 80px;	
+	margin: 5px 5px 10px 0;
+}
+
+.box-avatar-miembro-gdi {
+	/* background-color: #BCBEC0;*/
+	border-radius: 50px;
+	height: 60px;
+	width: 60px;
+	float: left;	
+}
+
+.box-avatar-miembro-gdi img {
+	border-radius: 50px;
+	width: 100%;
+	height: 100%;	
+}
+
+.box-nom-miembro-gdi {
+	margin-left: 70px;
+	margin-top: 10px;
+}
+
+.box-nom-miembro-gdi h5 {
+	line-height: 20px;
+	font-weight: normal;
+}
+
+.upm-icono {
+	height: 30px;
+	margin-top: 5px;
+}
+
+.social-icons-grid {
+	list-style: none outside none;
+	margin: 0;
+}
+
+.social-icons-grid li {
+	display: inline-block;
+}
+
+.social-icons-grid a {
+	font-size: 36px;
+	color: #333;
+}
+
+.social-icons-grid a:hover,
+.social-icons-grid a:focus {
+	color: #E5007E;
+	text-decoration: none;
+}
